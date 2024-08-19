@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application</title>
+</head>
+<body>
+    
+    <form action="/submit-application" method="post" enctype="multipart/form-data">
+        <h2>Job application</h2>
+    
+        
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required>
+        <br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br>
+    
+        
+        <label for="position">Position Title:</label>
+        <select id="position" name="position">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+            <option value="custom">Other</option>
+        </select>
+        <br>
+    
+        
+        <label for="degree">Highest Degree Earned:</label>
+        <input type="text" id="degree" name="degree" required>
+        <br>
+    
+        <label for="institution">Institution Name:</label>
+        <input type="text" id="institution" name="institution" required>
+        <br>
+    
+        <label for="grad-year">Graduation Year:</label>
+        <input type="text" id="grad-year" name="grad_year" required>
+        <br>
+    
+        
+        <h3>Current or Most Recent Employer</h3>
+        
+        <label for="current-employer">Employer:</label>
+        <input type="text" id="current-employer" name="current_employer" required>
+        <br>
+    
+        <label for="current-job-title">Job Title:</label>
+        <input type="text" id="current-job-title" name="current_job_title" required>
+        <br>
+    
+        <label for="current-employment-dates">Employment Dates:</label>
+        <input type="text" id="current-employment-dates" name="current_employment_dates" required>
+        <br>
+    
+        <label for="current-responsibilities">Responsibilities:</label>
+        <textarea id="current-responsibilities" name="current_responsibilities"></textarea>
+        <br>
+    
+        
+        <label for="skills">Key Skills:</label>
+        <textarea id="skills" name="skills"></textarea>
+        <br>
+    
+      
+        <label for="resume">Resume Upload:</label>
+        <input type="file" id="resume" name="resume" required>
+        <br>
+    
+        <label for="cover-letter">Cover Letter Upload:</label>
+        <input type="file" id="cover-letter" name="cover_letter">
+        <br>
+    
+      
+        <label for="certifications">Certifications:</label>
+        <textarea id="certifications" name="certifications"></textarea>
+        <br>
+    
+        <label for="languages">Languages Spoken:</label>
+        <textarea id="languages" name="languages"></textarea>
+        <br>
+    
+        <label for="references">Professional References:</label>
+        <textarea id="references" name="references"></textarea>
+        <br>
+    
+        
+        <label for="start-date">Available Start Date:</label>
+        <input type="date" id="start-date" name="start_date">
+        <br>
+    
+        <label for="salary">Desired Salary:</label>
+        <input type="text" id="salary" name="salary">
+        <br>
+    
+        <label>
+            <input type="checkbox" name="background_check" required>
+            I consent to a background check as part of the hiring process.
+        </label>
+        <br>
+    
+        <label>
+            <input type="checkbox" name="contact_references" required>
+            I consent to contact my professional references.
+        </label>
+        <br>
+    
+        <div class="captcha">
+           
+        </div>
+        <br>
+    
+        <button type="submit">Submit Application</button>
+    </form>
+    
+    </body>
+    </html>        

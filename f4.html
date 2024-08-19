@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+</head>
+<body>
+    <form action="/submit-donation" method="post" enctype="multipart/form-data">
+        <h2>Donation Form</h2>
+    
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required>
+        <br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br>
+    
+        <label for="amount">Donation Amount:</label>
+        <input type="number" id="amount" name="amount" min="1" required>
+        <br>
+    
+        <label for="payment-method">Payment Method:</label>
+        <select id="payment-method" name="payment_method" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+        </select>
+        <br>
+    
+        <label for="card-number">Credit Card Number:</label>
+        <input type="text" id="card-number" name="card_number">
+        <br>
+    
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="month" id="expiry-date" name="expiry_date">
+        <br>
+    
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv">
+        <br>
+    
+        <label for="honor">Donate in Honor of Someone:</label>
+        <input type="text" id="honor" name="honor">
+        <br>
+    
+        <label for="subscription">Subscription Type:</label>
+        <select id="subscription" name="subscription">
+            <option value="one-time">One-Time</option>
+            <option value="monthly">Monthly</option>
+        </select>
+        <br>
+    
+        <label for="updates">Subscribe to Updates:</label>
+        <input type="checkbox" id="updates" name="updates">
+        <br>
+    
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br>
+    
+        <label>
+            <input type="checkbox" name="privacy_policy" required>
+            I agree to the privacy policy.
+        </label>
+        <br>
+    
+        <div class="captcha">
+        </div>
+        <br>
+    
+        <button type="submit">Donate Now</button>
+    </form>
+    
+</body>
+</html>

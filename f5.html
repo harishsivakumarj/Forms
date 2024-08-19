@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+</head>
+<body>
+    <form action="/submit-adoption" method="post">
+        <h2>Adoption Application Form</h2>
+    
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full_name" required>
+        <br>
+    
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+    
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br>
+    
+        <label for="household-size">Number of People in Household:</label>
+        <input type="number" id="household-size" name="household_size" required>
+        <br>
+    
+        <label for="children">Are there children in the household?</label>
+        <select id="children" name="children">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+    
+        <label for="pets">Do you have other pets?</label>
+        <select id="pets" name="pets">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+    
+        <label for="pet-details">If yes, please provide details:</label>
+        <textarea id="pet-details" name="pet_details"></textarea>
+        <br>
+    
+        <label for="adopt-animal">Animal Type Interested In:</label>
+        <select id="adopt-animal" name="adopt_animal">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+    
+        <label for="animal-breed">Preferred Breed (if applicable):</label>
+        <input type="text" id="animal-breed" name="animal_breed">
+        <br>
+    
+        <label for="reason">Why do you want to adopt this animal?</label>
+        <textarea id="reason" name="reason" required></textarea>
+        <br>
+    
+        <label for="home-type">Type of Home:</label>
+        <select id="home-type" name="home_type">
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="condo">Condo</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+    
+        <label for="yard">Do you have a yard or outdoor space?</label>
+        <select id="yard" name="yard">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+    
+        <label for="home-security">Do you have home security?</label>
+        <select id="home-security" name="home_security">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br>
+    
+        <label>
+            <input type="checkbox" name="agreement" required>
+            I agree to the adoption terms and conditions.
+        </label>
+        <br>
+    
+        <label for="comments">Additional Comments or Questions:</label>
+        <textarea id="comments" name="comments"></textarea>
+        <br>
+    
+        <button type="submit">Submit Application</button>
+    </form>
+    
+    </body>
+</html>
